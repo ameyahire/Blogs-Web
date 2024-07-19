@@ -15,7 +15,14 @@ const { log } = require('console');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfqwertyuiop';
 
-app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-1whq-vercel.app"],
+        methods:["POST","GET"],
+        credentials:true,
+        origin:'http://localhost:3000'
+    }
+));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
