@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="client/src/images/nobgBlogs.png" width="300"/>
+</p>
 # 📝 Blogs
 
 A full-stack blog website built with **React**, **Node.js**, and **MongoDB** where users can create, edit, and view blogs. Authenticated users can upload images and manage their posts.
