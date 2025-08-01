@@ -4,6 +4,7 @@ import appStore from "./images/Appstore.png";
 import instagram from "./images/instagram.png";
 import linkedln from "./images/linkedln.png";
 import gmail from "./images/mail.png";
+import Logo from "./images/nobgBlogs.png";
 
 import "./Footer.css"
 
@@ -20,18 +21,18 @@ const Footer = () => {
       </div>
 
       <div className="midFooter">
-        <h1>BlogCentral</h1>
+        <img src={Logo} alt="Blogs" />
         <p>Write your own blogs with us</p>
 
-        <p>Copyrights 2023 &copy; Shreyash</p>
+        <p>Copyrights 2023 &copy; Amey</p>
       </div>
 
       <div className="rightFooter">
         <h4> Contact Us</h4>
-        <a href="https://instagram.com/s_h_r_e_y_02?igshid=MzRlODBiNWFlZA==" target='_blank'>Instagram <img src={instagram} alt="" /></a>
+        <a href="https://www.instagram.com/amey_ahire/" target='_blank'>Instagram <img src={instagram} alt="" /></a>
         
-        <a href="https://www.linkedin.com/in/shreyash-uke-18950322a/?trk=people-guest_people_search-card&originalSubdomain=in"target='_blank'>Linkedln<img src={linkedln} alt="" /></a>
-        <a href="https://www.linkedin.com/in/shreyash-uke-18950322a/?trk=people-guest_people_search-card&originalSubdomain=in"target='_blank'>Gmail<img src={gmail} alt="" /></a>
+        <a href="https://www.linkedin.com/in/amey-ahire-96b55325b"target='_blank'>Linkedln<img src={linkedln} alt="" /></a>
+        <a href="https://www.linkedin.com/in/amey-ahire-96b55325b"target='_blank'>Gmail<img src={gmail} alt="" /></a>
       </div>
 
 

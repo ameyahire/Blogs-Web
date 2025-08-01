@@ -6,7 +6,7 @@ a{
 }
 body{
   color: #222;
-  background-image: url('./assets/sky3.jpg');
+  background-image: url('./assets/bg-block.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,22 +20,38 @@ main{
   padding: 10px;
   max-width: 960px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+
+  background: rgb(255 255 255 / 74%);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
-header{
-  display:flex;
-  justify-content:space-between;
-  margin-top: 0px;
-  height: 55px;
-  margin-bottom: 50px;
+header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(34, 33, 33);
+  margin: 0px 0px 50px 0px;
+  height: 55px;
   width: 100%;
+
+  /* Glassmorphism styles */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
+
 header a{
   text-decoration:none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
+
+
 header a.logo{
   font-weight: bold;
   font-size: 1.5rem;
@@ -51,7 +67,7 @@ div.post{
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: auto;
 }
 @media screen and (min-width: 700px) {
   div.post{

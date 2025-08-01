@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "./UserContext";
+import Logo from "./images/nobgBlogs.png";
 
 export default function Header(){
 
@@ -28,7 +29,9 @@ export default function Header(){
   const username = userInfo?.username;
     return(
         <header>
-        <Link to="/" className="logo">BlogCentral</Link>
+        <Link to="/" className="logo">
+          <img src={Logo} alt="BlogCentral Logo" style={{ height: '40px' }} />
+        </Link>
         <nav>
           {username && (
             <>
